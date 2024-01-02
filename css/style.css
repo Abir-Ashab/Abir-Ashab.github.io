@@ -87,7 +87,7 @@ section.profile {
     align-items: center;
     padding:3rem;
     margin-top: 60px;
-/*     clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%); */
     padding-bottom:4rem;
 }
 section.profile .left {
@@ -432,4 +432,36 @@ footer {
     background-color: var(--footer);
     text-align: center;
     padding: .5rem;
+}
+
+@media (max-width: 800px ) {
+    section.profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .edu-exp-container, .project-skill-container, .count-up-container, .oj-handle-container, .contact-container, .name-email {
+        display: block;
+    }
+
+    .education, .project, .count, .handle, .information {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px ) {
+    .profile .left {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 50px;
+    }
 }
