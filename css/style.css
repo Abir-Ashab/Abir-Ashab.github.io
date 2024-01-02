@@ -87,7 +87,7 @@ section.profile {
     align-items: center;
     padding:3rem;
     margin-top: 60px;
-    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%); */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
     padding-bottom:4rem;
 }
 section.profile .left {
